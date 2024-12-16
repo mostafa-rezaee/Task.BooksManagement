@@ -10,6 +10,7 @@ namespace Common.Domain.Bases
     public interface IBaseRepository<T> where T : BaseEntity
     {
         Task<T?> GetTrackingAsync(Guid id);
+        Task<List<T>> GetAllAsync();
         Task AddAsync(T entity);
         Task<int> SaveAsync();
     }

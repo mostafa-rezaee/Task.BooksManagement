@@ -23,6 +23,11 @@ namespace BooksManagement.Infrastructure.Repositories
             await _context.Set<T>().AddAsync(entity);
         }
 
+        public async Task<List<T>> GetAllAsync()
+        {
+            return await _context.Set<T>().AsNoTracking().ToListAsync();
+        }
+
         public Task<T?> GetTrackingAsync(Guid id)
         {
             return _context.Set<T>().AsTracking().FirstOrDefaultAsync(x => x.Id.Equals(id));
