@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="AuthorQueries\GetById\" />
+    <Folder Include="AuthorQueries\GetAll\" />
+    <Folder Include="BookQueries\GetById\" />
+    <Folder Include="BookQueries\GetAll\" />
+    <Folder Include="BookQueries\GetByAuthor\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Query\Common.Query.csproj" />
+  </ItemGroup>
+
+</Project>
