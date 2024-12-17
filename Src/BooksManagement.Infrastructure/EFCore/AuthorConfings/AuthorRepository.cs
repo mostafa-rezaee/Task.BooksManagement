@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BooksManagement.Infrastructure.EFCore.AuthorConfings
 {
-    internal class AuthorRepository : BaseRepository<Author>, IAuthorRepository
+    public class AuthorRepository : BaseRepository<Author>, IAuthorRepository
     {
         public AuthorRepository(BooksContext context) : base(context)
         {

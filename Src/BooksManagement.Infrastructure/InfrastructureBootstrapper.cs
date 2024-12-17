@@ -12,16 +12,15 @@ using System.Threading.Tasks;
 
 namespace BooksManagement.Infrastructure
 {
-    public static class InfrastructureBootstrapper
+    public class InfrastructureBootstrapper
     {
-        public static IServiceCollection BootstrappInfrastructure(this IServiceCollection services, string connectionString)
+        public static void BootstrappInfrastructure(IServiceCollection services, string connectionString)
         {
             services.AddTransient<IAuthorRepository, AuthorRepository>();
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddDbContext<BooksContext>(optionsAction: options => {
                 options.UseSqlServer(connectionString);
             });
-            return services;
         }
     }
 }

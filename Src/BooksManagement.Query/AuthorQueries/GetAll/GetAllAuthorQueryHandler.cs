@@ -1,4 +1,5 @@
 ﻿using BooksManagement.Domain.Repositories;
+using BooksManagement.Infrastructure.EFCore.AuthorConfings;
 using BooksManagement.Query.AuthorQueries.DTO;
 using Common.Query.Bases;
 

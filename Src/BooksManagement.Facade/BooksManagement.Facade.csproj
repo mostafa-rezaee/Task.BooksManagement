@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\Common.Query\Common.Query.csproj" />
-    <ProjectReference Include="..\BooksManagement.Infrastructure\BooksManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\BooksManagement.Application\BooksManagement.Application.csproj" />
+    <ProjectReference Include="..\BooksManagement.Query\BooksManagement.Query.csproj" />
   </ItemGroup>
 
 </Project>

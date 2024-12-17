@@ -10,5 +10,6 @@ namespace BooksManagement.Domain.Repositories
 {
     public interface IBookRepository : IBaseRepository<Book>
     {
+        Task<List<Book>> GetByAuthorId(Guid authorId);
     }
 }

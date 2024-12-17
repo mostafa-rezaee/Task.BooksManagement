@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BooksManagement.Infrastructure.Repositories
 {
-    internal class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
         private readonly BooksContext _context;
 
