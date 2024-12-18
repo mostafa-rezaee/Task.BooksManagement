@@ -31,7 +31,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksManagement.Config", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksManagement.Facade", "Src\BooksManagement.Facade\BooksManagement.Facade.csproj", "{5F3C79A8-9014-409F-9063-094A6EC610C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.API", "Src\Common\Common.API\Common.API.csproj", "{ED999A2E-D1FF-46D3-A099-BA9E9C2A6C44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.API", "Common\Common.API\Common.API.csproj", "{ED999A2E-D1FF-46D3-A099-BA9E9C2A6C44}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksManagement.Domain.Unit.Test", "Tests\BooksManagement.Domain.Unit.Test\BooksManagement.Domain.Unit.Test.csproj", "{0ED782EE-D72F-45F6-ABC9-2CCD53DB60C6}"
 EndProject

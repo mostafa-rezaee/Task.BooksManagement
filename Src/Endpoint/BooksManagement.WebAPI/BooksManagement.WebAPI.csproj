@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Common.API\Common.API.csproj" />
     <ProjectReference Include="..\..\BooksManagement.Config\BooksManagement.Config.csproj" />
-    <ProjectReference Include="..\..\Common\Common.API\Common.API.csproj" />
   </ItemGroup>
 
 </Project>
