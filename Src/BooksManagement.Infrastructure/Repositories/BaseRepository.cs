@@ -28,9 +28,29 @@ namespace BooksManagement.Infrastructure.Repositories
             return await _context.Set<T>().AsNoTracking().ToListAsync();
         }
 
-        public Task<T?> GetTrackingAsync(Guid id)
+        public async Task<List<T>> GetAllAsync(string[] includes)
         {
-            return _context.Set<T>().AsTracking().FirstOrDefaultAsync(x => x.Id.Equals(id));
+            var _c = _context.Set<T>().AsNoTracking();
+            for (var i = 0; i < includes.Length; i++)
+            {
+                _c = _c.Include(includes[i]);
+            }
+            return await _c.ToListAsync();
+        }
+
+        public async Task<T?> GetTrackingAsync(Guid id)
+        {
+            return await _context.Set<T>().AsTracking().FirstOrDefaultAsync(x => x.Id.Equals(id));
+        }
+
+        public async Task<T?> GetTrackingAsync(Guid id, string[] includes)
+        {
+            var _c = _context.Set<T>().AsTracking();
+            for (var i = 0; i < includes.Length; i++)
+            {
+                _c = _c.Include(includes[i]);
+            }
+            return await _c.FirstOrDefaultAsync(x => x.Id.Equals(id));
         }
 
         public async Task<int> SaveAsync()

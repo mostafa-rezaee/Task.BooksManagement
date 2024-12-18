@@ -20,7 +20,8 @@ namespace BooksManagement.Infrastructure.EFCore.BookConfigs
 
         public async Task<List<Book>> GetByAuthorId(Guid authorId)
         {
-            return await _context.Books.Where(x => x.AuthorId == authorId).ToListAsync();
+            return await _context.Books.Include(nameof(Book.Author)).Where(x => x.AuthorId == authorId).ToListAsync();
         }
+
     }
 }

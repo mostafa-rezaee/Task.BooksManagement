@@ -1,4 +1,5 @@
 ﻿using BooksManagement.Domain.Aggregates;
+using BooksManagement.Domain.Repositories;
 using BooksManagement.Query.AuthorQueries.DTO;
 using BooksManagement.Query.BookQueries.DTO;
 using System;
@@ -18,8 +19,8 @@ namespace BooksManagement.Query.BookQueries
                 Id = book.Id,
                 Title = book.Title,
                 AuthorId = book.AuthorId,
-                Author = new AuthorDto { Id = book.Author.Id, Name = book.Author.Name },
-                PublishedYear = book.PublishedYear
+                PublishedYear = book.PublishedYear,
+                Author = book.Author,
             };
         }
         public static List<BookDto> MapList(this List<Book> books)
@@ -29,9 +30,10 @@ namespace BooksManagement.Query.BookQueries
                 Id = x.Id,
                 Title = x.Title,
                 AuthorId = x.AuthorId,
-                Author = new AuthorDto { Id = x.Author.Id, Name = x.Author.Name },
-                PublishedYear = x.PublishedYear
+                PublishedYear = x.PublishedYear,
+                Author = x.Author,
             }).ToList();
         }
+
     }
 }

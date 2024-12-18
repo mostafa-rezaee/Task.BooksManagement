@@ -3,6 +3,7 @@ using BooksManagement.Query.BookQueries.DTO;
 using BooksManagement.Query.AuthorQueries.DTO;
 using Common.Query.Bases;
 using BooksManagement.Domain.Repositories;
+using BooksManagement.Domain.Aggregates;
 
 namespace BooksManagement.Query.BookQueries.GetAll
 {
@@ -17,7 +18,7 @@ namespace BooksManagement.Query.BookQueries.GetAll
 
         public async Task<List<BookDto>> Handle(GetAllBookQuery request, CancellationToken cancellationToken)
         {
-            var list = await _bookRepository.GetAllAsync();
+            var list = await _bookRepository.GetAllAsync([nameof(Book.Author)]);
             return list.MapList();
         }
     }

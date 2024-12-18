@@ -1,4 +1,5 @@
-﻿using BooksManagement.Query.AuthorQueries.DTO;
+﻿using BooksManagement.Domain.Aggregates;
+using BooksManagement.Query.AuthorQueries.DTO;
 using Common.Query.Bases;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,6 @@ namespace BooksManagement.Query.BookQueries.DTO
         public string Title { get; set; }
         public Guid AuthorId { get; set; }
         public int PublishedYear { get; set; }
-        public AuthorDto Author { get; set; }
+        public Author Author { get; set; }
     }
 }
