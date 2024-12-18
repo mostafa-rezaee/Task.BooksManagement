@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksManagement.Facade", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.API", "Src\Common\Common.API\Common.API.csproj", "{ED999A2E-D1FF-46D3-A099-BA9E9C2A6C44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksManagement.Domain.Unit.Test", "Tests\BooksManagement.Domain.Unit.Test\BooksManagement.Domain.Unit.Test.csproj", "{0ED782EE-D72F-45F6-ABC9-2CCD53DB60C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{ED999A2E-D1FF-46D3-A099-BA9E9C2A6C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED999A2E-D1FF-46D3-A099-BA9E9C2A6C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED999A2E-D1FF-46D3-A099-BA9E9C2A6C44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED782EE-D72F-45F6-ABC9-2CCD53DB60C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED782EE-D72F-45F6-ABC9-2CCD53DB60C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED782EE-D72F-45F6-ABC9-2CCD53DB60C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED782EE-D72F-45F6-ABC9-2CCD53DB60C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{3634911F-DC10-473B-8791-5E10B66990B9} = {FCBCD9C5-3083-4910-8012-147C230473DE}
 		{5F3C79A8-9014-409F-9063-094A6EC610C0} = {FCBCD9C5-3083-4910-8012-147C230473DE}
 		{ED999A2E-D1FF-46D3-A099-BA9E9C2A6C44} = {152C1DE0-B4D9-4B73-AC81-40EE13004866}
+		{0ED782EE-D72F-45F6-ABC9-2CCD53DB60C6} = {4FD34EDA-BE86-46C9-9597-D8C80B0A55CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {239AA35D-AD1E-4C63-9A3A-2418F1588194}
